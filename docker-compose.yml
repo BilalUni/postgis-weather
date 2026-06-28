@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  db:
+    image: postgis/postgis:15-3.3
+    environment:
+      POSTGRES_USER: agrario
+      POSTGRES_PASSWORD: supersecretpassword
+      POSTGRES_DB: geodata
+    ports:
+      - "5432:5432"
